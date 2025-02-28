@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    background-image: url('bg-img.png');
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 12vh;
+    color: #ffffff;
+}
+
+nav {
+    height: 70px;
+}
+
+.logo {
+    background-color: #282828;
+}
+
+img {
+    height: 50px;
+    width: 150px;
+    margin: 5px 0 0 20px;
+}
+
+/* Container for search, video, and comments */
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px; /* Added padding for spacing */
+    z-index: 1;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #333; /* Dark grey background */
+    border-radius: 30px;
+    padding: 15px 20px;
+    width: 60%;
+    max-width: 1000px; /* Adjust this width */
+    margin-bottom: 30px; /* Space between sections */
+}
+
+.search-container input[type="text"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #e0e0e0; /* Light grey text color */
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #aaaaaa; /* Placeholder text color */
+}
+
+#btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#btn i {
+    font-size: 30px; /* Icon size */
+    color: #e0e0e0; /* White icon */
+}
+
+.separator {
+    height: 40px; /* Adjust height as needed */
+    width: 1px;
+    background-color: #555; /* Border color */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Video Section */
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent; /* Matches the dark background */
+    padding: 20px;
+    width: 90%;
+    max-width: 800px; /* Limit width */
+    margin-bottom: 30px;
+}
+
+#video a {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#video img {
+    height: 100%;
+    width: 90%; /* Adjust to fit the container */
+    border-radius: 12px; /* Rounded corners */
+    border: 1px solid #333; /* Video border */
+}
+
+#video h3 {
+    color: #ffffff; /* White title text */
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Comments Section */
+#comments {
+    margin-top: 30px;
+    text-align: left;
+    color: #e0e0e0; /* Comment text color */
+    font-size: 18px;
+    width: 90%;
+    max-width: 800px; /* Limit width */
+   
+}
+
+#comments img {
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#comments b {
+    color: #ffffff; /* Author name color */
+}
+
+#comments p {
+    margin: 10px 0;
+}
